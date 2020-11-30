@@ -46,12 +46,14 @@ export const Container = styled.div `
    }
 
    >.icons {
+      
       > a { 
          padding: 2.75em;
          text-decoration:none;
          > img {
             width:30px;
             height:30px;
+            
          } 
       }
    }
@@ -82,12 +84,14 @@ export const Container = styled.div `
          padding: 1.75em;
          text-decoration:none;
          > img {
-            margin-top: 3.75em;
-            width:28px;
-            height:28px;
+            margin-top: 2.75em;
+            width:20px;
+            height:20px;
          } 
       }
    }
-}
 
+   
+
+}
 `

@@ -6,8 +6,8 @@ export const Container = styled.div `
    margin: .2em;
    border-radius: 7px;
 
-   background-color:#CAFAFE;
-   color: #05386B;
+   background-color:#181818;
+   color: #f0f0f0;
 
    
 `
@@ -42,7 +42,7 @@ export const MenuItemLink = styled.a `
    
    padding: .5em;
    text-decoration:none;
-   color: #05386B;
+   color: #f0f0f0;
 
    > li {
       cursor:pointer;
