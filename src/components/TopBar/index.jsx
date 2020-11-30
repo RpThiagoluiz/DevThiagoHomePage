@@ -15,6 +15,7 @@ const TopBar = () => {
          
          <Ul>
             <h2>WebDev Thiago</h2>
+            
             <MenuItemLink href="/">
                <MdHome className="icons" />
                <li>Home</li>

@@ -41,18 +41,19 @@ export const MenuItemLink = styled.a `
    text-decoration:none;
    color: #05386B;
 
-
-   
-
-
    > li {
       cursor:pointer;
-      
    }
  
    > .icons {
       margin: auto 5px;
 
+   }
+
+   transition: all .5 ease-in-out;
+
+   & :hover {
+      
    }
 
  

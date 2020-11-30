@@ -1,5 +1,5 @@
 import React from 'react'
-import MainHeader from '../MainHeader'
+import Skills from '../Skills'
 import TopBar from '../TopBar'
 import Content from '../Content'
 
@@ -8,8 +8,8 @@ import { Grid } from './styles'
 const Layout = ({children}) => {
    return (
       <Grid>
-         <MainHeader />
          <TopBar />
+         <Skills />
          <Content>
             {children}
          </Content>
