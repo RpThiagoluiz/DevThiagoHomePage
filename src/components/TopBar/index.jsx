@@ -9,12 +9,12 @@ import {
 
 } from './styles'
 
-const TopBar = () => {
+const TopBar = ({LeftTitle}) => {
    return (
       <Container>
          
          <Ul>
-            <h2>WebDev Thiago</h2>
+            {LeftTitle}
             
             <MenuItemLink href="/">
                <MdHome className="icons" />

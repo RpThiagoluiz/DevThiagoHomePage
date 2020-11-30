@@ -8,7 +8,7 @@ import { Grid } from './styles'
 const Layout = ({children}) => {
    return (
       <Grid>
-         <TopBar />
+         <TopBar LeftTitle={<h2>WebDev Thiago</h2>}/>
          <Skills />
          <Content>
             {children}
