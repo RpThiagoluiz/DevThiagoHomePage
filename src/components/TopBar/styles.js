@@ -2,8 +2,11 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
    grid-area: TB;
-   background-color:#CAFAFE;
 
+   margin: .2em;
+   border-radius: 7px;
+
+   background-color:#CAFAFE;
    color: #05386B;
 
    
