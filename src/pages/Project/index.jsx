@@ -1,7 +1,10 @@
 import React from 'react'
+import Layout from '../../components/LayoutProjects'
 
 export default function Project() {
    return (
-      <h1>Hello</h1>
+      <Layout>
+         
+      </Layout>
    )
 }

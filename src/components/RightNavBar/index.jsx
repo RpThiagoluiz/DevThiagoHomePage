@@ -14,12 +14,12 @@ const RightNav = ({ open }) => {
 
             <MenuItemLink href="/project">
                <MdMovieFilter className="icons"/>
-               <li>Project</li>
+               <li>Projetos</li>
             </MenuItemLink>
 
             <MenuItemLink href="/about">
                <MdPeopleOutline className="icons"/>
-               <li>About</li>
+               <li>Sobre Min</li>
             </MenuItemLink>
          
      </Ul>
