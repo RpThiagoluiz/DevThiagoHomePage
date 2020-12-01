@@ -63,8 +63,9 @@ export const SideLeftBar = styled.div`
             width:48px;
             height:24px;
             margin-top: 0.5em;
-            background-color: #0f0f0f;
-            color: #f0f0f0;
+            background-color: #f0f0f0;
+            color: #0093E9;
+            
 
             border-radius: 5px;
             box-shadow:2px 2px 12px #0f0f0f;
@@ -72,8 +73,8 @@ export const SideLeftBar = styled.div`
             transition: all .4s ease-in;
             
             &:hover{
-               background-color:#f0f0f0;
-               color: #0f0f0f;
+               background-color: #0093E9;
+               color: #f0f0f0;
 
             }
          }

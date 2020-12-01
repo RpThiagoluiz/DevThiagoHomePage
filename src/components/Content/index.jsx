@@ -17,7 +17,7 @@ const Content = () => {
             backgroundImg={testeBck}
             title="React"
             description="As paginas foram criadas com React."
-            link="/project/interativa"
+            link="/project/interactive"
             icon="react"
          />
          <Card

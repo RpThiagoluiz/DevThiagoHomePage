@@ -1,5 +1,7 @@
 import React,{useState, useMemo} from 'react'
 
+
+
 import { 
    Container,
    Content,
@@ -104,9 +106,9 @@ const ProjectInteractive = ({
                   <button>Enviar</button>
                </label>
                <label>
-                  <input
+               <input
                      type="text"
-                     placeholder="cor de fundo"
+                     placeholder="Cor, com Hex!"
                   />
                   
                   <button>Enviar</button>
