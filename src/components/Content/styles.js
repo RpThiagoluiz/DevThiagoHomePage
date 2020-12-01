@@ -15,7 +15,7 @@ export const Container = styled.div `
    overflow-y: scroll;
 
    display:flex;
-   justify-content:center;
+   justify-content:space-around;
    flex-wrap: wrap;
 
    opacity: .8;

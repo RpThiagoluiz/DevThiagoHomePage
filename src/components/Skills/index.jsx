@@ -6,7 +6,7 @@ const Skills = () => {
       <Container>
          <h3>Habilidades</h3>
          <span>Graficos</span>
-         <p>suadhso;hdashdlahsldkjhaskldjklasjdlksajkdljaskldjaskljdaskljdklsajdklsajkl</p>
+         <p>suadhso;hdashdlahsldldjklaskl</p>
       </Container>
    )
 }

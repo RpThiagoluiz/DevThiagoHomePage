@@ -4,70 +4,39 @@ import Card from '../ProjectCards'
 import { Container } from './styles'
 
 //img Background
-import testeBck from '../../assets/img/imgCards/neve.jpg'
+import testeBck from '../../assets/img/imgCards/teste.svg'
 
-//LinkLogo
-import logoGithub from '../../assets/img/imgLandingPage/github.png'
+
+
 
 const Content = () => {
+
    return (
       <Container>
-
          <Card
             backgroundImg={testeBck}
-            title="LandingPages"
+            title="React"
             description="As paginas foram criadas com React."
-            linkGit="https://github.com/RpThiagoluiz"
-            iconGit={logoGithub}
+            link="/project/interativa"
+            icon="react"
          />
          <Card
-            backgroundImg={testeBck}
-            title="LandingPages"
+            backgroundImg
+            title="CSS3"
             description="As paginas foram criadas com React."
-            linkGit="https://github.com/RpThiagoluiz"
-            iconGit={logoGithub}
+            link="https://github.com/RpThiagoluiz"
+            icon="css"
+            
          />
          <Card
-            backgroundImg={testeBck}
-            title="LandingPages"
+            backgroundImg
+            title="TypeScript"
             description="As paginas foram criadas com React."
-            linkGit="https://github.com/RpThiagoluiz"
-            iconGit={logoGithub}
+            link="https://github.com/RpThiagoluiz"
+            icon="typeScript"
+            
          />
-         <Card
-            backgroundImg={testeBck}
-            title="LandingPages"
-            description="As paginas foram criadas com React."
-            linkGit="https://github.com/RpThiagoluiz"
-            iconGit={logoGithub}
-         /> <Card
-            backgroundImg={testeBck}
-            title="LandingPages"
-            description="As paginas foram criadas com React."
-            linkGit="https://github.com/RpThiagoluiz"
-            iconGit={logoGithub}
-         />
-         <Card
-            backgroundImg={testeBck}
-            title="LandingPages"
-            description="As paginas foram criadas com React."
-            linkGit="https://github.com/RpThiagoluiz"
-            iconGit={logoGithub}
-         />
-         <Card
-            backgroundImg={testeBck}
-            title="LandingPages"
-            description="As paginas foram criadas com React."
-            linkGit="https://github.com/RpThiagoluiz"
-            iconGit={logoGithub}
-         />
-         <Card
-            backgroundImg={testeBck}
-            title="LandingPages"
-            description="As paginas foram criadas com React."
-            linkGit="https://github.com/RpThiagoluiz"
-            iconGit={logoGithub}
-         />
+      
 
       </Container>
    )

@@ -1,23 +1,40 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 
 import { Container } from './styles'
 
+import reactSvg from '../../assets/img/imgCards/react.svg'
+import cssSvg from '../../assets/img/imgCards/css.svg'
+import tscriptSvg from '../../assets/img/imgCards/typescript.svg'
 
 const Card = ({
    title,
    description,
-   linkGit,
-   iconGit,
+   link,
+   icon,
    backgroundImg
 }) => {
+
+   const iconSelected = useMemo (()=>{
+      switch(icon) {
+         case 'react':
+            return reactSvg
+         case 'css':
+            return cssSvg
+         case 'typeScript':
+            return tscriptSvg
+         default:
+            return undefined
+      }
+   },[icon])
+
    return (
       <Container background={backgroundImg} >
 
-
+         
          <h3>{title}</h3>
          <span>{description}</span>
-         <a href={linkGit} target="blank"><img src={iconGit} alt=""/></a>
-         
+         <button><a href={link}>Bora!</a></button>
+         <img src={iconSelected} alt={title} />
 
       </Container>
    )
