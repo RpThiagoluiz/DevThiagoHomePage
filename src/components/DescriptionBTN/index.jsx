@@ -13,7 +13,7 @@ const DescriptionBTn = ({
 
    return(
       <Container>
-         <img src={icon} onClick={_ => setModalVisible(true)}/>
+         <img src={icon} alt={title} onClick={_ => setModalVisible(true)}/>
          {modalVisible ? (
             <Modal
                onClose={_ => { setModalVisible(false) }}

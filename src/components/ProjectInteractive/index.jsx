@@ -1,4 +1,4 @@
-import React,{useState, useMemo} from 'react'
+import React from 'react'
 
 
 
@@ -10,15 +10,9 @@ import {
 } from './styles'
 
 
-const ProjectInteractive = ({
-   //top bar
-   topTitle,
+const ProjectInteractive = () => {
 
-}) => {
-
-   const [yourName, setYourName] = useState()
-
-   const [colorTopBar, setColorTopBar] =useState()
+   
 
 
    return(

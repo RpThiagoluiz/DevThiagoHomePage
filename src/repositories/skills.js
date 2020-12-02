@@ -1,4 +1,4 @@
-export default [
+const SkillsRepo = [
    {"id":1, "title":"Html5", "description": "BaseHtml5"},
    {"id":2, "title":"css3", "description": "Grid,FlexBox"},
    {"id":3, "title":"Js", "description": "Es6,ArrowFunction,..."},
@@ -6,3 +6,5 @@ export default [
    {"id":5, "title":"TypeScript", "description": "Base"},
 
 ]
+
+export default SkillsRepo

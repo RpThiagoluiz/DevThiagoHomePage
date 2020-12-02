@@ -24,7 +24,7 @@ export default function Interactive() {
             <TopBar LeftTitle={<h3>Conteudo Interativo</h3>} />
          </TopSide>
 
-         <GitHubLink link="https://github.com/RpThiagoluiz" />
+         <GitHubLink link="https://github.com/RpThiagoluiz/DevThiagoHomePage/tree/main/src/pages/Interactive" />
          <BackPage />
 
          <DescriptionBTn
