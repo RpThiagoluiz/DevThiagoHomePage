@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import TopBar from '../../components/TopBar'
+import BackPage from '../../components/BackPage'
 
 import logoGithub from '../../assets/img/imgLandingPage/github.svg'
 import logoTwitter from '../../assets/img/imgLandingPage/twitter.svg'
@@ -14,6 +15,7 @@ import {
 
 } from './styles'
 
+
 export default function About() {
 
 
@@ -22,6 +24,8 @@ export default function About() {
          <TopSide>
             <TopBar LeftTitle={<h3>It`s ME!</h3>} />
          </TopSide>
+
+         <BackPage />
 
          <Content>
             <h2>Ola, ... um pouco sobre minha jornada </h2>

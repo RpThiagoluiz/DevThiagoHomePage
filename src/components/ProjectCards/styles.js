@@ -4,32 +4,101 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
 
-   background: ${props => `url(${props.background})`};
+   background-color: rgba(250, 250, 250, .6);
    background-size: cover;
    background-position: center;
 
-   width: 28%;
+   width: 32%;
    height:250px;
    text-align:center;
 
    position:relative;
 
-   margin: 2.75em .75em;
+   margin: 1.75em .75em;
    padding: .5em;
-   border-radius: 8px 25px 5px 25px;
+   border-radius: 18px;
 
+   display:flex;
+   flex-direction:column;
+   justify-content:space-evenly;
+   align-items:center;
+
+   z-index: -2;
    overflow:hidden;
+   transition: all .8s ease-in-out;
+
+   box-shadow: 
+      10px -10px 0 -3px white, 10px -10px rgba(135,135,135, .7),
+      20px -20px 0 -3px white, 20px -20px rgba(45,45,45, .7);
+      
+      
+
+   :before {
+      content:'';
+      background: ${props => `url(${props.background})`};
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover ;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.9;
+
+      
+
+      
+   }
+
+   &:hover {
+      background-color: rgba(250, 250, 250, 1);
+
+      width:40%;
+      height:350px;
+
+      box-shadow: 
+         0 0 0 -3px #000, 0 0 0 0 rgba(135,135,135, .7),
+         0 0 0 -3px rgba(135,135,135, .7), 0 0 0 0  rgba(45,45,45, .7),
+         0 0 0 -3px rgba(45,45,45, .7), 0 0 0 0  rgba(221,221,221, .7),
+         0 0 0 -3px  rgba(221,221,221, .7), 0 0 0 0  #000;
+
+      border:5px solid black;
+      border-radius: 24px;
+      
+
+      > h3 {
+         color: #000;
+      }
+      >span{
+         color:#000;
+      }
+      > button{
+         background-color: #000;
+         z-index:9;
+         > a{
+            color: #fff;
+         }
+      }
+
+   }
    
 
    > h3 {
       margin-top: 15px;
+      font-size: 24px;
+      text-transform:uppercase;
+      color: white;
       
    }
 
    > span {
-      position:absolute;
-      top: 35%;
-      right: 5%;
+      padding: 1em;
+      color: #fff;
+      transition: all .5s ease-in;
+
+      
    }
 
 
@@ -46,14 +115,12 @@ export const Container = styled.div `
    }
 
    > button {
-      position:absolute;
-      bottom: 5px;
-      left: 30%;
+      
 
       cursor: pointer;
       margin-top: 1.5rem;
       padding: 0.75rem 1.5rem;
-      background-color: black;
+      background-color: #fff;
       border-radius: 8px;
       box-shadow: -5px -5px 12px black;
 
@@ -63,7 +130,7 @@ export const Container = styled.div `
          letter-spacing: 0.025rem;
          text-transform: uppercase;
          text-decoration:none;
-         color: #f0f0f0;
+         color: #000;
       }
 
      
@@ -74,21 +141,17 @@ export const Container = styled.div `
       position: absolute;
       top: -5px;
       right: -120px;
-      opacity: 0.3
-   }
+      opacity: 0.3;
 
-//Effect
-   transition: all .6s ease-in-out;
+      transition: all 1.2s ease-in;
 
-   
-   &:hover {
-      > button {
-         bottom: 25px;
+      &:hover{
+         top:10px;
+         right:20px;
       }
-
-
-      
    }
+
+
 
    
 `
