@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
 import { Container } from './styles'
 import BurgerBtn from '../../components/BurgerBtn'
 
@@ -25,9 +25,9 @@ export default function LandingPage() {
 
          
         <div className="icons">
-           <Link to="https://github.com/RpThiagoluiz" target="blank"><img src={logoGithub} alt="GitHub RpThiagoLuiz"/></Link>
-           <Link to="https://twitter.com/RpThiagoluiz" target="blank" ><img src={logoTwitter} alt="Twitter RpThiagoLuiz"/></Link>
-           <Link to="https://www.linkedin.com/in/thiago-luiz-0984191a7/" target="blank" ><img src={logoLinkedIn} alt="LinkedIn ThiagoLuiz"/></Link>
+         <a href="https://github.com/RpThiagoluiz" target="blank"><img src={logoGithub} alt="GitHub RpThiagoLuiz"/></a>
+         <a href="https://twitter.com/RpThiagoluiz" target="blank" ><img src={logoTwitter} alt="Twitter RpThiagoLuiz" /></a>
+         <a href="https://www.linkedin.com/in/thiago-luiz-0984191a7/" target="blank" ><img src={logoLinkedIn} alt="LinkedIn ThiagoLuiz" /></a>
         </div>
          
       </Container>
