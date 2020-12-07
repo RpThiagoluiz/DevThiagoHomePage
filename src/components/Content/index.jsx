@@ -26,7 +26,7 @@ const Content = () => {
             backgroundImg={bin}
             title="Lista de Tarefas"
             description="form basico "
-            link="/project/ToDoList"
+            link="/project/todolist"
             icon="react"
          />
         

@@ -65,10 +65,13 @@ export const FormContainer = styled.form `
       
       border-radius: 5px;
       padding: 0.25em 0.5em;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       cursor: pointer;
       line-height: 1.1;
       
+      position:absolute;
+      top: 250px;
+      left:100px;
 
       background-color: #fff;
       

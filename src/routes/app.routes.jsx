@@ -15,7 +15,7 @@ const AppRoutes = () => (
          <Route path="/" exact component={LandingPage} />
          <Route path="/project" exact component={Project} />
          <Route path="/project/interactive" exact component={Interactive} />
-         <Route path="/project/TodoList" exact component={ToDoList} />
+         <Route path="/project/todolist" exact component={ToDoList} />
 
          <Route path="/about" exact component={About} />
       </Switch>

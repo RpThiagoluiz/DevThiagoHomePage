@@ -37,6 +37,9 @@ export const Container = styled.div `
 
       > p {
          margin: 1.5em;
+         margin-top: 5em;
+         text-align:left;
+         
       }
 
    }
