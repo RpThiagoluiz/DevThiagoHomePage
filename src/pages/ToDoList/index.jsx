@@ -26,11 +26,12 @@ export default function FormOne()  {
          </TopSide>
 
          <BackPage />
-         <GitHubLink link=""/>
+         <GitHubLink link="https://github.com/RpThiagoluiz/DevThiagoHomePage/tree/main/src/pages/ToDoList"/>
          <DescriptionBTn 
             title="Lista de Tarefas"
-            description="Voce acrescenta tarefas, deletas, e exclui itens da sua lista. Ela é salva no localStorage do browser.
-            Há um botão que limpa o seu localStorage tbm.
+            description="Voçe acrescenta tarefas, deleta  e exclui PERMANENTEMENTE itens da sua lista. 
+            A list de atividades é salva no localStorage do browser.
+            Há um botão que limpa o seu localStorage - Limpar Dados.
             "
          />
 
