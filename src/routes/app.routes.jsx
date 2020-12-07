@@ -4,7 +4,7 @@ import LandingPage from '../pages/Landing'
 import Project from '../pages/Project'
 import About from '../pages/About'
 import Interactive from '../pages/Interactive'
-import FormOne from '../pages/FormOne'
+import ToDoList from '../pages/ToDoList'
 
 
 
@@ -15,7 +15,7 @@ const AppRoutes = () => (
          <Route path="/" exact component={LandingPage} />
          <Route path="/project" exact component={Project} />
          <Route path="/project/interactive" exact component={Interactive} />
-         <Route path="/project/formone" exact component={FormOne} />
+         <Route path="/project/TodoList" exact component={ToDoList} />
 
          <Route path="/about" exact component={About} />
       </Switch>

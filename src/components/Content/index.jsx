@@ -24,32 +24,13 @@ const Content = () => {
 
          <Card
             backgroundImg={bin}
-            title="Formulario"
+            title="Lista de Tarefas"
             description="form basico "
-            link="/project/formOne"
+            link="/project/ToDoList"
             icon="react"
          />
-         <Card
-            backgroundImg={bin}
-            title="Formulario"
-            description="form basico "
-            link="/project/formOne"
-            icon="typeScript"
-         />
-         <Card
-            backgroundImg={bin}
-            title="Formulario"
-            description="form basico "
-            link="/project/formOne"
-            icon="typeScript"
-         />
-         <Card
-            backgroundImg={bin}
-            title="Formulario"
-            description="form basico "
-            link="/project/formOne"
-            icon="typeScript"
-         />
+        
+       
 
       </Container>
    )
