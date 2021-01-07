@@ -1,39 +1,32 @@
-import React from 'react'
-import { MdHome, MdMovieFilter, MdPeopleOutline } from "react-icons/md"
+import React from "react";
+import { Link } from "react-router-dom";
+import { MdHome, MdMovieFilter, MdPeopleOutline } from "react-icons/md";
 
 //Styles
-import {
-   Container,
-   Ul,
-   MenuItemLink
+import { Container, Ul } from "./styles";
 
-} from './styles'
+const TopBar = ({ LeftTitle }) => {
+  return (
+    <Container>
+      <Ul>
+        {LeftTitle}
+        <Link className="router-Link" to="/">
+          <MdHome className="icons" />
+          <li>Home</li>
+        </Link>
 
-const TopBar = ({LeftTitle}) => {
-   return (
-      <Container>
-         
-         <Ul>
-            {LeftTitle}
-            
-            <MenuItemLink href="/">
-               <MdHome className="icons" />
-               <li>Home</li>
-            </MenuItemLink>
+        <Link className="router-Link" to="/project">
+          <MdMovieFilter className="icons" />
+          <li>Projetos</li>
+        </Link>
 
-            <MenuItemLink href="/project">
-               <MdMovieFilter className="icons" />
-               <li>Projetos</li>
-            </MenuItemLink>
+        <Link className="router-Link" to="/about">
+          <MdPeopleOutline className="icons" />
+          <li>Sobre Min</li>
+        </Link>
+      </Ul>
+    </Container>
+  );
+};
 
-            <MenuItemLink href="/about">
-               <MdPeopleOutline className="icons" />
-               <li>Sobre Min</li>
-            </MenuItemLink>
-
-         </Ul>
-      </Container>
-   )
-}
-
-export default TopBar
+export default TopBar;

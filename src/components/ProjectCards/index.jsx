@@ -1,45 +1,46 @@
-import React, { useMemo } from 'react'
+import React from "react";
 
-import { Container } from './styles'
+import { Container, CardBack, CardFront } from "./styles";
 
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import reactSvg from '../../assets/img/imgCards/react.svg'
-import cssSvg from '../../assets/img/imgCards/css.svg'
-import tscriptSvg from '../../assets/img/imgCards/typescript.svg'
+import { MdAutorenew } from "react-icons/md";
 
-const Card = ({
-   title,
-   description,
-   link,
-   icon,
-   backgroundImg
-}) => {
+// import reactSvg from "../../assets/img/imgCards/react.svg";
+// import cssSvg from "../../assets/img/imgCards/css.svg";
+// import tscriptSvg from "../../assets/img/imgCards/typescript.svg";
 
-   const iconSelected = useMemo (()=>{
-      switch(icon) {
-         case 'react':
-            return reactSvg
-         case 'css':
-            return cssSvg
-         case 'typeScript':
-            return tscriptSvg
-         default:
-            return undefined
-      }
-   },[icon])
+const Card = ({ title, description }) => {
+  // const iconSelected = useMemo(() => {
+  //   switch (icon) {
+  //     case "react":
+  //       return reactSvg;
+  //     case "css":
+  //       return cssSvg;
+  //     case "typeScript":
+  //       return tscriptSvg;
+  //     default:
+  //       return undefined;
+  //   }
+  // }, [icon]);
 
-   return (
-      <Container background={backgroundImg} >
+  return (
+    <Container>
+      <CardFront>
+        <h3>{title}</h3>
+        <br />
+        <span>{description}</span>
+        <br />
+        <small>Passe o mouse para vê-los!</small>
+        {/* <img src={iconSelected} alt={title} /> */}
+      </CardFront>
+      <CardBack>
+        <p>Basduahudao Deu baum</p>
+      </CardBack>
 
-         
-         <h3>{title}</h3>
-         <span>{description}</span>
-         <button><Link to={link}>Bora!</Link></button>
-         <img src={iconSelected} alt={title} />
+      <MdAutorenew className="icons" />
+    </Container>
+  );
+};
 
-      </Container>
-   )
-}
-
-export default Card
+export default Card;

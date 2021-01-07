@@ -1,29 +1,28 @@
-import React,{useState} from 'react'
-import Modal from '../Modal'
+import React, { useState } from "react";
+import Modal from "../Modal";
 
-import { Container } from './styles'
+import { Container } from "./styles";
 
-import icon from '../../assets/img/freeIcons/duvida.png'
+import icon from "../../assets/img/freeIcons/duvida.png";
 
-const DescriptionBTn = ({
-   title, 
-   description
-}) => {
-   const [modalVisible, setModalVisible] = useState(true)
+const DescriptionBTn = ({ title, description }) => {
+  const [modalVisible, setModalVisible] = useState(true);
 
-   return(
-      <Container>
-         <img src={icon} alt={title} onClick={_ => setModalVisible(true)}/>
-         {modalVisible ? (
-            <Modal
-               onClose={_ => { setModalVisible(false) }}
-            >
-               <h1>{title}</h1>
-               <p>{description}</p>
-            </Modal>
-         ) : null}
-      </Container>
-   )
-}
+  return (
+    <Container>
+      <img src={icon} alt={title} onClick={(_) => setModalVisible(true)} />
+      {modalVisible ? (
+        <Modal
+          onClose={(_) => {
+            setModalVisible(false);
+          }}
+        >
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </Modal>
+      ) : null}
+    </Container>
+  );
+};
 
-export default DescriptionBTn
+export default DescriptionBTn;

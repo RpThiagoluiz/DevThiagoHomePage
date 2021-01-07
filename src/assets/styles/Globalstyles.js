@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
 
@@ -14,6 +14,7 @@ export default createGlobalStyle`
 
    html,body,#root {
       height: 100%;
+      overflow-y:hidden;
 
    ::-webkit-scrollbar{
       width: 12px;
@@ -41,4 +42,4 @@ export default createGlobalStyle`
       cursor: pointer;
    }
 
-`
+`;

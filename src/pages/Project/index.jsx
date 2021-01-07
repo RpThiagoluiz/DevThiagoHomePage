@@ -1,8 +1,26 @@
-import React from 'react'
-import LayoutProjects from '../../components/LayoutProjects'
+import React from "react";
+import Card from "../../components/ProjectCards";
 
-export default function Project() {
-   return (
-      <LayoutProjects />
-   )
-}
+import TopBar from "../../components/TopBar";
+
+import { Container, Content } from "./styles";
+
+const Project = () => {
+  return (
+    <Container>
+      <TopBar LeftTitle={<h2>WebDev Thiago</h2>} />
+      <Content>
+        <Card
+          title="Cursos"
+          description={`Projetos realizados durante cursos de programação e/ou bootcamps`}
+        />
+        <Card
+          title="Solo"
+          description="Projetos realizados por conta propria."
+        />
+      </Content>
+    </Container>
+  );
+};
+
+export default Project;
